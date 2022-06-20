@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/vue@3"></script>
+    <script src="vue.js" type="module"></script>
+    <link rel="stylesheet" href="main.css">
+    <title>Vue Homework</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+<!-- main elements that are pulling from vue.js file with events -->
+
+<div id="app">
+    <h4 class="message">{{bennie}}</h4>
+    <img :src= "pose" class="img" @click= "displayPoseMsg()" @clickout="removePoseMsg()" />
+    <h4 class="message">{{messagepose}}</h4>
+    <img :src= "walk" class="img" @click="displayWalkMsg()" @mouseover="hoverWalk()" @mouseout="removeHoverWalk()" />
+    <h4 class="message">{{messagewalk}}</h4>
+    <img :src= "golf" class="img" @click="displayGolfMsg()" @mouseover="hoverGolf()" @mouseout="removeHoverGolf()" />
+    <h4 class="message">{{messagegolf}}</h4>
+    <img :src= "donut" class="img" @click="displayDonutMsg()" @mouseover="hoverDonut()" @mouseout="removeHoverDonut()" />
+    <h4 class="message">{{messagedonut}}</h4>
+  </div>
